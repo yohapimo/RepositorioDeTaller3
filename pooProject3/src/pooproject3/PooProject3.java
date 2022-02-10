@@ -16,7 +16,7 @@ public class PooProject3 {
      */
     public static void main(String[] args) {
         
-        System.out.println("Se realiza el primer cambio");
+        System.out.println("Se realiza Segundo cambio");
         
     }
     
