@@ -9,7 +9,7 @@ package pooproject3;
  *
  * @author yohapimo
  */
-public class PlayList implements Comparable<PlayList> {
+public class PlayList {
 
     public int id;
     public String titulo;
@@ -91,12 +91,6 @@ public class PlayList implements Comparable<PlayList> {
     @Override
     public String toString() {
         return "PlayList{" + "id" + id + ", titulo=" + titulo + ", genero=" + genero + ", fecha=" + fecha + ", duracion=" + duracion + ", caratula=" + caratula + ", descripcion=" + descripcion + '}' + "\n";
-    }
-
-    @Override
-    public int compareTo(PlayList t) {
-        return fecha.compareTo(t.getFecha());
-
     }
 
 }
