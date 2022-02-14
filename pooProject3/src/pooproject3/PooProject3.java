@@ -5,6 +5,7 @@
  */
 package pooproject3;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -18,35 +19,39 @@ public class PooProject3 {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        try {
 
-        System.out.print("Ingrese codigo de canción: : ");
-        int id = Integer.parseInt(sc.nextLine());
+            System.out.print("Ingrese codigo de canción: : ");
+            int id = Integer.parseInt(sc.nextLine());
 
-        System.out.print("Ingrese Titulo de canción: ");
-        String titulo = sc.nextLine();
+            System.out.print("Ingrese Titulo de canción: ");
+            String titulo = sc.nextLine();
 
-        System.out.print("Ingrese Genero de canción: ");
-        String genero = sc.nextLine();
+            System.out.print("Ingrese Genero de canción: ");
+            String genero = sc.nextLine();
 
-        System.out.print("Ingrese Fecha de cancion: ");
-        String fecha = sc.nextLine();
+            System.out.print("Ingrese Fecha de cancion: ");
+            String fecha = sc.nextLine();
 
-        System.out.print("Ingrese duracion de canción: : ");
-        double duracion = Double.parseDouble(sc.nextLine());
+            System.out.print("Ingrese duracion de canción: : ");
+            double duracion = Double.parseDouble(sc.nextLine());
 
 //        System.out.print("Ingrese Caratula: ");
 //        String caratula = sc.nextLine(); 
 //        
-        System.out.print("Ingrese breve descripción: ");
-        String descripcion = sc.nextLine();
+            System.out.print("Ingrese breve descripción: ");
+            String descripcion = sc.nextLine();
 
-        PlayList1 objPlayList1 = new PlayList1(id, titulo, genero, fecha, duracion, "Caratula disco", descripcion);
+            PlayList1 objPlayList1 = new PlayList1(id, titulo, genero, fecha, duracion, "Caratula disco", descripcion);
 
-        System.out.println("\n");
+            System.out.println("\n");
 
-        System.out.println("Mi play list es: ");
-        System.out.println(objPlayList1);
-        objPlayList1.crearList();
+            System.out.println("Mi play list es: ");
+            System.out.println(objPlayList1);
+            objPlayList1.crearList();
+        } catch (Exception e) {
+            System.out.println("Ingresar un valor valido!");
+        }
 
     }
 
