@@ -48,11 +48,10 @@ public class PlayList1 extends PlayList {
                 Collections.sort(playlistas);
             } else if (numero == 2) {
                 Collections.sort(playlistas, Collections.reverseOrder());
-            }
-            else{
+            } else {
                 System.out.println("Solo ingresa 1 o 2");
             }
-            
+
         } catch (Exception InException) {
             System.out.println("solo 1 0 2");
         }
@@ -60,6 +59,11 @@ public class PlayList1 extends PlayList {
         for (PlayList elemento : playlistas) {
             System.out.println(elemento);
 
+        }
+        System.out.println("estos son los generos");
+        for (PlayList elemento : playlistas) {
+
+            System.out.println(elemento.getTitulo());
         }
 
     }

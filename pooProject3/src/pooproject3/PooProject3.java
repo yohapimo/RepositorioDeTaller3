@@ -5,7 +5,6 @@
  */
 package pooproject3;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -49,6 +48,9 @@ public class PooProject3 {
             System.out.println("Mi play list es: ");
             System.out.println(objPlayList1);
             objPlayList1.crearList();
+
+            System.out.println(objPlayList1.getTitulo());
+
         } catch (Exception e) {
             System.out.println("Ingresar un valor valido!");
         }
